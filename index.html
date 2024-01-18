@@ -5,50 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale-1.0, maximum-scale=1.0, user-scable=0">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Услуги и cервисы</title>
+    <style> li {
+      list-style-type: none; 
+     }
+   </style>
 </head>
 <body>
    <header class="header">
-    <div class="container">
-        <img class="menu" src="img/burger.png" alt="menu">
-        <div class="divider-2"></div>
-        <img class="logo" src="img/Group.png" alt="logo">
-       <img class="call" src="img/call.png" alt="call"></img>
-       <img class="chat" src="img/chat.png" alt="chat"></img> 
-       <img class="profile" src="img/profile.png" alt="profile"></img>
-       <div class="divider"></div>
-        <img class="tool" src="img/repair.png" alt="tool">
-        <img class="checkstatus" src="img/checkstatus.png" alt="checkstatus">
-        <div class="shadow"></div>
-    </div>
-   </header> 
-<div class="title">
-   <div class="highligth"></div>
-   <h1 class="break-word">Услуги и сервисы</h1>
-   <div class="call-back">Оставить заявку</div>
-        <img class="tool-2" src="img/repair.png" alt="tool">
-        <div class="checkstatus-word">Статус ремонта</div>
-        <img class="checkstatus-2" src="img/checkstatus.png" alt="checkstatus">
-</div>
-   <ul class="menu-container">
-   <div class="slide-menu">
-   <div class="button-1">Ремонтируемые устройства</div>
-   </div>
-   <div class="button-2">Дополнительные услуги</div>
-   <div class="button-3">Цены на услуги</div>
-   <div class="button-4">Адреса сервисных центров</div>
-   <div class="button-5">Специальные цены</div>
-   <div class="fade-copy"></div>
-   </ul>
-   <div class="coments">Отзывы</div>
-   <div class="main-text">
-   <section>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. </section>
-   <section class="word-break">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</section>
-</div>
+      <div class="header__container">
+          <button class="header__menu-img"></button>
+          <div class="header__divider-two"></div>
+          <img class="logo-img" src="img/Group.png" alt="logo">
+          <button class="header__call-img"></button>
+          <button class="header__chat-img"></button>
+          <button class="header__profile-img"></button>
+          <div class="header__divider"></div>
+          <button class="header__tool-img"></button>
+          <button class="header__checkstatus-img"></button>
+          <div class="shadow"></div>
+      </div>
+    </header> 
+
    <div class="first-block">
-    <img class="expand" src="img/expand.png" alt="expand">
-    <div class="read-next">Читать далее</div>
+            <div class="first-block__highligth"></div>
+            <h1 class="first-block__title">Услуги и сервисы</h1>
+            <div class="first-block__call-back">Оставить заявку</div>
+            <button class="first-block__tool-img"></button>
+            <div class="first-block__checkstatus-text">Статус ремонта</div>
+            <button class="first-block__checkstatus-img"></button>
+   </div>
+
+   <ul class="menu">
+       <button class="menu__btn__ctive">
+       <li class="menu__btn-first">Ремонтируемые устройства</li>
+       </button>
+       <li class="menu__button-second">Дополнительные услуги</li>
+       <li  class="menu__button-third">Цены на услуги</li>
+       <li  class="menu__button-fourth">Адреса сервисных центров</li>
+       <li  class="menu__button-fiveth">Специальные цены</li>
+       <li class="menu__fade-copy"></li>
+   </ul>
+
+   <div class="reviews">Отзывы</div>
+   <div class="main-text">
+      <p class="main-text__top">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. </p>
+      <p class="main-text__bottom">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+   </div>
+   <div class="block">
+       <img class="expand" src="img/expand.png" alt="expand">
+       <div class="read-next">Читать далее</div>
    </div>
    <img class="place-holder" src="img/_MG_3223.jpg" alt="Place Holder">
-   
 </body>
+
 </html>

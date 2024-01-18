@@ -46,30 +46,26 @@ html {
 *,* ::after, *::before{
     box-sizing: inherit;
 }
-body {
+    body {
     margin: 0;
-    min-width: 320px;
-    height: 568px;
-    background-color: #F8F8F8;
-    
-}
-.header {
-    height: 88px;
-    background:white;
-}
-.container {
-    position: absolute;
-    display: flex;
-    width: 320px; 
-}
-.menu{
+    background-color: #F8F8F8;    
+    }
+   
+    .header__container {
+        height: 88px;
+        background:white;
+        display: flex;
+    }
+    .header__menu-img{
+    background-image: url("/img/burger.png");
     margin-top: 24px;
     margin-left: 16px;
     width: 40px; 
     height: 40px; 
-    position: relative;
-}
-.divider-2 {
+    border: 0;
+    border-radius: 20px;
+    }
+    .header__divider-two {
     content:"";
     width: 2px; 
     height: 32px; 
@@ -80,27 +76,34 @@ body {
     margin-left: 84px;
     margin-right: 0px;
     display: none;
-}
-.call {
-    visibility: hidden;
+    }
+    .header__call-img {
+    background-image: url("/img/call.png");
+    border: 0;
+    border-radius: 20px;
     display: none;
-}
-.chat {
-    visibility: hidden;
+    }
+    .header__chat-img {
+    background-image: url("/img/chat.png");
+    border: 0;
+    border-radius: 20px;
     display: none;
-}
-.profile {
-    visibility: hidden;
+    }
+    .header__profile-img {
+    background-image: url("/img/profile.png");
+    border: 0;
+    border-radius: 20px;
     display: none;
-}
-.logo {
+    }
+    .logo-img {
    margin-top: 19px;
    margin-left: 17px;     
    width: 96.55px; 
    height: 50.81px;
     position: relative;
-}
-.divider{
+    }
+    
+    .header__divider{
     content:"";
     width: 2px; 
     height: 32px; 
@@ -109,57 +112,55 @@ body {
     position: absolute;
     margin-top: 28px;  
     margin-left: 180px;
-    margin-right: 132px;
-   
-}
-.call-back{
-    visibility: hidden;
+    margin-right: 132px; 
+    }
+
+    .call-back{
+    display: none;
     overflow: hidden;
-}
-.tool{
+    }
+
+    .header__tool-img{
+    background-image: url("/img/repair.png");
     margin-top: 24px;
     margin-left: 20px;
     width: 40px; 
     height: 40px; 
+    border: 0;
+    border-radius: 20px;
     position: relative;
-}
-.checkstatus-word{
-    overflow: hidden;
-    visibility: hidden;
-}
-.checkstatus{
+    }   
+
+    .header__checkstatus-img{
+    background-image: url("/img/checkstatus.png");
     margin-top: 24px;
     margin-left: 16px;
     width: 40px;
     height: 40px; 
+    border: 0;
+    border-radius: 20px;
     position: relative;
-}
-.tool-2{
-    overflow: hidden;
-    visibility: hidden;
-}
-.checkstatus-2{
-    overflow: hidden;
-    visibility: hidden;
-}
-.shadow {
-content:"";
-width: 320px;
-height: 1px;
-background: #D9FFF5; 
-position: absolute;
-margin-top: 87px;
-}
+    }
+
+
+    .shadow {
+    content:"";
+    width: 320px;
+    height: 1px;
+    background: #D9FFF5; 
+    position: absolute;
+    margin-top: 87px;
+    }
 
 /*******break-word************************************************************/
 
-.title{
+    .first-block{
+    
     background-color: #F8F8F8;
     display: flex;
-    flex-direction: row;
-
-}
-.highligth{
+    overflow: scroll;
+    }
+    .first-block__highligth{
     content: "";
     width: 4px; 
     height: 40px;
@@ -167,34 +168,58 @@ margin-top: 87px;
     margin-top: 24px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-}
-.break-word{
-    width: 288px;
+    }   
+    .first-block__title {
+    width: 320px;
     color: #1B1C21;
     font-size: 28px;
     font-family: 'TT LakesBold';
     font-weight: 700;
     margin-top: 24px;
     margin-left: 16px;
-    line-height: 40px;
     margin-bottom: 24px;
-    
-}
-ul {
-    padding: 0px;
-    display: flex;
-    margin-top: 0px;
-    padding-left: 16px;
-   
-}
-.menu-container{
-    height: 40px;
-    overflow: scroll;
-    white-space: nowrap;
-}
+    }
+
+    .first-block__call-back {
+        
+        display: none;
+        overflow: hidden;
+    }
+
+    .first-block__tool-img {
+        background-image: url("/img/repair.png");
+        width: 40px; 
+        height: 40px; 
+        border: 0;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .first-block__checkstatus-text{
+        display: none;
+    }
+
+    .first-block__checkstatus-img{
+        background-image: url("/img/checkstatus.png");
+        width: 40px; 
+        height: 40px; 
+        border: 0;
+        border-radius: 20px;
+        display: none;
+    }
+
+    .menu {
+        padding: 0px;
+        display: flex;
+        margin-top: 0px;
+        padding-left: 16px;
+        height: 40px;
+        overflow: scroll;
+        white-space: nowrap;
+    }
 
 
-.slide-menu{
+    .menu__btn__ctive {
     width: 246px; 
     height: 40px;
     background-color: white;
@@ -202,12 +227,11 @@ ul {
     border: 1px #B8FFEC solid;
     padding:0px;
     display: scroll;
+    }
 
-}
 
-
-.button-1{
-    width: 246px; 
+    .menu__btn-first {
+    width: 230px; 
     height: 40px;
     color: #0d0d18; 
     font-size: 16px; 
@@ -215,10 +239,9 @@ ul {
     font-weight: 500;
     line-height: 24px;
     padding-top: 8px;
-    padding-left: 17px;
-    
-}
-.button-2{
+    }
+
+    .menu__button-second {
     width: 210px;
     height: 24px;
     padding-left: 19px;
@@ -227,9 +250,9 @@ ul {
     font-size: 16px;
     padding-top: 10px;
     color: #7E7E82;  
+    }
     
-}
-.button-3,.button-4,.button-5 {
+    .menu__button-third, .menu__button-fourth, .menu__button-fiveth {
     width: 210px;
     height: 24px;
     padding-left: 20px;
@@ -238,24 +261,28 @@ ul {
     font-size: 16px;
     padding-top: 10px;
     color: #7E7E82; 
-}
-.fade-copy{
+    }
+
+    .menu__fade-copy {
     content: "";
     width: 40px; 
     height: 40px;
     background: #F8F8F8;
     
-}
-.coments {
-  margin: 0 px;
+    }
+
+    .reviews {
+    margin: 0 px;
     visibility: hidden;
-}
-.main-text{
+    }
+
+    .main-text{
     width: 288px;
     height: 94px;
     overflow: hidden;
-}
-section {
+    }
+
+    .main-text__top , .main-text__bottom {
     margin-top: 0px;
     font-family: 'TT Lakes';
     font-weight: 400;
@@ -264,158 +291,167 @@ section {
     margin-bottom: 25px;
     color:#1B1C21;
     overflow: hidden;
-}
-.word-break{
-    font-family: 'TT Lakes';
-    font-weight: 400;
-    margin-bottom: 0px;
+    }
 
-}
-
-.first-block{
+    .block {
     display: flex;
     width: 320px;
     padding-left: 16px;
-    margin-top: 0px;
-}
-.expand {
+    margin-top: 10px;
+    margin-left: 0px;
+    }
+
+    .expand {
     width: 24px;
     height: 24px;
     margin-top: 0px;
-}
-.read-next{
-   width: 100px;
-   height: 24px;
+    }
 
-}
-.place-holder{
+    .read-next{
+    font-family: 'TT Lakes';
+    width: 101px;
+    height: 24px;
+        }
+
+    .place-holder{
     width: 320px; 
     height: 230.80px;
     margin-top: 14px;
+    }
+    
+@media (min-width: 768px) { 
 
-}
-@media (min-width: 768px)  { 
-    body{
-        height: 504px;
-    }
     .header{
-        width: 768px; 
-        display: flex;
+     
     }
-    .container {
-        width: 768px;
-        height: 88px;
+    .header__container {
+        display: flex;
         background-color: white;
     }
-   .menu {
+
+   .header__menu-img {
    margin-top: 24px;
    margin-left: 24px;
-
    }
-   .divider-2{
+
+   .header__divider-two{
     display: inline;
-    margin-left: 84px;
+    margin-left: 72px;
     margin-top: 28px;
    }
-   .logo{
+
+   .header__logo-img{
     margin-left: 42px;
     margin-top: 18px;
    }
-   .call {
+
+   .header__call-img{
     width: 40px; 
     height: 40px; 
     position: relative;
     margin-left: 290px;
     margin-top: 24px;
     display: inline;
-    visibility: visible;
-    
    }
-   .chat{
+
+   .header__chat-img{
     width: 40px; 
     height: 40px; 
     position: relative;
     margin-left: 16px;
     margin-top: 24px;
     display: inline;
-    visibility: visible;
    }
-   .profile{
+
+   .header__profile-img{
     width: 40px; 
     height: 40px; 
     position: relative;
     margin-left: 16px;
     margin-top: 24px;
     display: inline;
-    visibility: visible;
    }
-   .divider {
-    left: 474px;
+
+   .header__divider {
+    left: 450px;
     right: 0px;
     top: 0px;
     position: absolute;
    }
-   .break-word {
+
+   .shadow{
+    width: 768px;
+    height: 1px;
+   }
+
+   .first-block__title {
     margin-left: 31px;
    }
-   .menu-container{
+
+   .menu{
     margin-left: 24px;
    }
    
-.main-text{
+   .main-text{
     width: 312px;
     height: 160px;
     margin-left: 24px;
-}
-.place-holder{
+    }
+
+    .place-holder{
     position: fixed;
     right: 25px;
     top: 217px;
-}
+    }
 }
 
 @media (min-width: 1121px) {
- .header {
-    display: none;
-}
-.call-back{
-    visibility: visible;
-    margin-left: 450px;
-    width: 125px;
-    text-align: right;
+
+     .header {
+    display: none;}
+ 
+    .first-block__call-back{
+    display: inline;
+    margin-left: 380px;
+    margin-right: 8px;
+    width: 130px;
+    text-align: center;
     color: #1B1C21; 
     font-size: 16px;
     margin-top: 50px;
-    margin-right: 8px;
+    font-family: 'TT Lakes';    
+    }
 
-}
-.tool-2{
-    visibility: visible;
+    .first-block__tool-img{
+    display: inline;
     width: 40px;
     height: 40px;
-    margin-top: 42px;
-    margin-right: 32px;
+    margin-top: 38px;
+    }
 
-}
-.checkstatus-word{
-    visibility: visible;
+    .first-block__checkstatus-text{
+    display: inline;
     margin-top: 50px;
     margin-right: 8px;
-}
-.checkstatus-2 {
-   overflow: visible;
-    visibility: visible;
-    height: 40px;
-    width: 40px;
-    margin-top: 42px;
-}
-.break-word {
+    font-family: 'TT Lakes';
+    width: 126px;
+    margin-left: 32px;  
+    }
+
+    .first-block__checkstatus-img {
+        display: inline;
+        margin-top: 38px;       
+    }
+
+    .first-block__title {
+    margin-left: 32px;
+    }
+
+   .menu {
     margin-left: 32px;
    }
-   .menu-container{
-    margin-left: 32px;
-   }
-   .coments {
+
+   .reviews {
     visibility: visible;
     width: 71px;
     height: 24px;
@@ -427,23 +463,18 @@ section {
     line-height: 16px;
     letter-spacing: 0.20px;
     color: #7E7E82;
-   }
+    }
+
    .main-text{
     width: 500px;
     height: 200px;
     line-height: 20px;
     letter-spacing: 0.20px;
-   }
-   .word-break{
-    overflow: visible;
-    height: fit-content;
-   }
-   .first-block{
-    margin-left: 25px;
-   }
+    }
+   
    .place-holder{
     width: 532px;
     height: 380px;
     margin-top: -60px;
-   }
+    }
 }
