@@ -76,7 +76,16 @@ html {
     margin-left: 84px;
     margin-right: 0px;
     display: none;
+    } 
+    
+    .logo-img {
+   margin-top: 19px;
+   margin-left: 17px;     
+   width: 96.55px; 
+   height: 50.81px;
+    position: relative;
     }
+    
     .header__call-img {
     background-image: url("/img/call.png");
     border: 0;
@@ -95,13 +104,7 @@ html {
     border-radius: 20px;
     display: none;
     }
-    .logo-img {
-   margin-top: 19px;
-   margin-left: 17px;     
-   width: 96.55px; 
-   height: 50.81px;
-    position: relative;
-    }
+   
     
     .header__divider{
     content:"";
@@ -115,10 +118,6 @@ html {
     margin-right: 132px; 
     }
 
-    .call-back{
-    display: none;
-    overflow: hidden;
-    }
 
     .header__tool-img{
     background-image: url("/img/repair.png");
