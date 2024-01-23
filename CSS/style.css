@@ -52,19 +52,27 @@ html {
     }
    
     .header__container {
-        height: 88px;
-        background:white;
         display: flex;
-    }
-    .header__menu-img{
-    background-image: url("/img/burger.png");
-    margin-top: 24px;
-    margin-left: 16px;
-    width: 40px; 
-    height: 40px; 
-    border: 0;
-    border-radius: 20px;
-    }
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .header__group-one {
+        display: flex;
+        align-items: center;
+      }
+
+     .header__menu-img{
+        background-image: url("/img/burger.png");
+        margin-top: 24px;
+        margin-left: 16px;
+        width: 40px; 
+        height: 40px; 
+        border: 0;
+        border-radius: 20px;
+        }
+
     .header__divider-two {
     content:"";
     width: 2px; 
@@ -85,7 +93,22 @@ html {
    height: 50.81px;
     position: relative;
     }
-    
+    .header__group-two {
+        display: flex;
+        align-items: center;
+      }
+
+    .header__divider{
+    content:"";
+    width: 2px; 
+    height: 32px; 
+    background: #EAEAEA;
+    border-radius: 1px;
+    position: absolute;
+    margin-top: 28px;  
+    margin-right: 132px; 
+    }
+
     .header__call-img {
     background-image: url("/img/call.png");
     border: 0;
@@ -104,21 +127,6 @@ html {
     border-radius: 20px;
     display: none;
     }
-   
-    
-    .header__divider{
-    content:"";
-    width: 2px; 
-    height: 32px; 
-    background: #EAEAEA;
-    border-radius: 1px;
-    position: absolute;
-    margin-top: 28px;  
-    margin-left: 180px;
-    margin-right: 132px; 
-    }
-
-
     .header__tool-img{
     background-image: url("/img/repair.png");
     margin-top: 24px;
@@ -308,7 +316,7 @@ html {
 
     .read-next{
     font-family: 'TT Lakes';
-    width: 101px;250
+    width: 101px;
     height: 24px;
         }
 
@@ -320,9 +328,7 @@ html {
     
 @media (min-width: 768px) { 
 
-    .header{
-     
-    }
+   
     .header__container {
         display: flex;
         background-color: white;
