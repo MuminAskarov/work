@@ -66,7 +66,6 @@ html {
      .header__menu-img{
         background-image: url("/img/burger.png");
         margin-top: 24px;
-        margin-left: 16px;
         width: 40px; 
         height: 40px; 
         border: 0;
@@ -106,7 +105,6 @@ html {
     border-radius: 1px;
     position: absolute;
     margin-top: 28px;  
-    margin-right: 132px; 
     }
 
     .header__call-img {
@@ -150,13 +148,15 @@ html {
     }
 
 
-    .shadow {
+    .first-block__shadow{
+    display: flex;
+    align-items: center;
     content:"";
-    width: 320px;
+    width: 100%;
     height: 1px;
     background: #D9FFF5; 
     position: absolute;
-    margin-top: 87px;
+    margin-top: 17px;
     }
 
 /*******break-word************************************************************/
@@ -226,7 +226,7 @@ html {
     }
 
 
-    .menu__btn__ctive {
+    .menu__btn__active {
     width: 246px; 
     height: 40px;
     background-color: white;
@@ -283,12 +283,6 @@ html {
     visibility: hidden;
     }
 
-    .main-text{
-    width: 288px;
-    height: 94px;
-    overflow: hidden;
-    }
-
     .main-text__top , .main-text__bottom {
     margin-top: 0px;
     font-family: 'TT Lakes';
@@ -298,6 +292,9 @@ html {
     margin-bottom: 25px;
     color:#1B1C21;
     overflow: hidden;
+    }
+    .main-text__bottom {
+        display: none;
     }
 
     .block {
@@ -321,6 +318,7 @@ html {
         }
 
     .place-holder{
+    display: flex;
     width: 320px; 
     height: 230.80px;
     margin-top: 14px;
