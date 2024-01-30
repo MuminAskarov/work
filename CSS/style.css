@@ -56,6 +56,8 @@ html {
         justify-content: space-between;
         align-items: center;
         padding: 0 20px;
+        background-color: white;
+        height: 88px;
       }
 
       .header__group-one {
@@ -94,6 +96,7 @@ html {
     }
     .header__group-two {
         display: flex;
+        justify-content: space-between;
         align-items: center;
       }
 
@@ -156,7 +159,6 @@ html {
     height: 1px;
     background: #D9FFF5; 
     position: absolute;
-    margin-top: 17px;
     }
 
 /*******break-word************************************************************/
@@ -282,6 +284,11 @@ html {
     margin: 0 px;
     visibility: hidden;
     }
+    
+    .main-text{
+        display: flex;
+        flex-direction: column;
+    }
 
     .main-text__top , .main-text__bottom {
     margin-top: 0px;
@@ -315,13 +322,13 @@ html {
     font-family: 'TT Lakes';
     width: 101px;
     height: 24px;
-        }
+    margin-bottom: 10px;
+    }
 
-    .place-holder{
+    .img-holder__place-holder{
     display: flex;
-    width: 320px; 
-    height: 230.80px;
-    margin-top: 14px;
+    margin: 0 auto;
+    border-radius: 5px;
     }
     
 @media (min-width: 768px) { 
@@ -346,6 +353,10 @@ html {
    .header__logo-img{
     margin-left: 42px;
     margin-top: 18px;
+   }
+
+   .header__group-two{
+    font-display: column;
    }
 
    .header__call-img{
@@ -376,10 +387,9 @@ html {
    }
 
    .header__divider {
-    left: 450px;
-    right: 0px;
-    top: 0px;
-    position: absolute;
+    display: inline;
+    margin-left: 451px;
+    margin-top: 28px;
    }
 
    .shadow{
@@ -396,22 +406,32 @@ html {
    }
    
    .main-text{
-    width: 312px;
-    height: 160px;
+    max-width: 55%;
+   }
+
+   .main-text__top{
     margin-left: 24px;
+    flex: 1;
     }
 
-    .place-holder{
+    .main-text__bottom  {
+    display: block;
+    margin-left: 24px;
+    flex: 1;
+    }
+
+    .img-holder__place-holder{
     position: fixed;
     right: 25px;
     top: 217px;
+    border-radius: 10px;
     }
 }
 
 @media (min-width: 1121px) {
-
      .header {
-    display: none;}
+    display: none;
+}
  
     .first-block__call-back{
     display: inline;
@@ -474,10 +494,14 @@ html {
     line-height: 20px;
     letter-spacing: 0.20px;
     }
-   
-   .place-holder{
+  
+   .img-holder__place-holder {
     width: 532px;
     height: 380px;
     margin-top: -60px;
-    }
+    border-radius: 10px;
+    position: fixed;
+    max-width: 1121px;
+
+   }
 }
