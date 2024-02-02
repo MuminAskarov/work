@@ -324,9 +324,14 @@ html {
     height: 24px;
     margin-bottom: 10px;
     }
+    .img-holder {
+    display: flex;
+    align-items: center;
+    
+    
+    }
 
     .img-holder__place-holder{
-    display: flex;
     margin: 0 auto;
     border-radius: 5px;
     }
@@ -435,7 +440,7 @@ html {
  
     .first-block__call-back{
     display: inline;
-    margin-left: 380px;
+    margin-left: 330px;
     margin-right: 8px;
     width: 130px;
     text-align: center;
@@ -494,14 +499,19 @@ html {
     line-height: 20px;
     letter-spacing: 0.20px;
     }
-  
-   .img-holder__place-holder {
-    width: 532px;
-    height: 380px;
-    margin-top: -60px;
-    border-radius: 10px;
-    position: fixed;
+   .img-holder {
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    position: relative;
     max-width: 1121px;
-
+    margin-right: 20px;
+   
+  }
+   .img-holder__place-holder {
+    max-height: 100%;
+    max-width: 100%; 
+    
+    object-fit: cover;
    }
 }
