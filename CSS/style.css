@@ -166,12 +166,12 @@ html {
 
 /*******break-word************************************************************/
 
-    .first-block{
-    
+    .first-block {
     background-color: #F8F8F8;
     display: flex;
     overflow: scroll;
     }
+
     .first-block__highligth{
     content: "";
     width: 4px; 
@@ -193,18 +193,17 @@ html {
     }
 
     .first-block__call-back {
-        
-        display: none;
-        overflow: hidden;
+    display: none;
+    overflow: hidden;
     }
 
     .first-block__tool-img {
-        background-image: url("/img/repair.png");
-        width: 40px; 
-        height: 40px; 
-        border: 0;
-        border-radius: 20px;
-        display: none;
+    background-image: url("/img/repair.png");
+    width: 40px; 
+    height: 40px; 
+    border: 0;
+    border-radius: 20px;
+     display: none;
     }
 
     .first-block__checkstatus-text{
@@ -239,7 +238,7 @@ html {
     border-radius: 6px; 
     border: 1px #B8FFEC solid;
     padding:0px;
-    display: scroll;
+    
     }
 
 
@@ -252,6 +251,7 @@ html {
     font-weight: 500;
     line-height: 24px;
     padding-top: 8px;
+    margin-left: 15px;
     }
 
     .menu__button-second {
@@ -333,7 +333,10 @@ html {
 
     .read-next{
     font-family: 'TT Lakes';
+    font-size: 16px;
     width: fit-content;
+    border: none;
+    background-color: #F8F8F8;
     
     }
 
@@ -534,9 +537,7 @@ html {
         margin-right: 20px;
        
     }
-    .main__group-three_img{
-      margin-top: 
-    }
+   
 }
 
 
