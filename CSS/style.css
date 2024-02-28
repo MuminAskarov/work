@@ -194,7 +194,6 @@ html {
 
     .first-block__call-back {
     display: none;
-    overflow: hidden;
     }
 
     .first-block__tool-img {
@@ -203,7 +202,7 @@ html {
     height: 40px; 
     border: 0;
     border-radius: 20px;
-     display: none;
+    display: none;
     }
 
     .first-block__checkstatus-text{
@@ -211,23 +210,23 @@ html {
     }
 
     .first-block__checkstatus-img{
-        background-image: url("/img/checkstatus.png");
-        width: 40px; 
-        height: 40px; 
-        border: 0;
-        border-radius: 20px;
-        display: none;
+    background-image: url("/img/checkstatus.png");
+    width: 40px; 
+    height: 40px; 
+    border: 0;
+    border-radius: 20px;
+    display: none;
     }
 
     .menu {
-        padding: 0px;
-        display: flex;
-        margin-top: 0px;
-        padding-left: 16px;
-        height: 40px;
-        overflow-y: auto; 
-        white-space: nowrap;
-        list-style-type: none; 
+    padding: 0px;
+    display: flex;
+    margin-top: 0px;
+    padding-left: 16px;
+    height: 40px;
+    overflow: auto; 
+    white-space: nowrap;
+    list-style-type: none; 
     }
 
 
@@ -285,25 +284,25 @@ html {
     }
 
     .reviews {
-    margin: 0 px;
+    margin: 0px;
     visibility: hidden;
     }
     
     .main {
-        display: flex;
-        flex-direction: column;
-      }
+    display: flex;
+    flex-direction: column;
+    }
     
     .main__container {
-        display: flex;
-        flex-direction: column;
-      }
+    display: flex;
+    flex-direction: column;
+    }
     
     
 
     .main__group-one{
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
     }
 
     .content__text-top , .content__text-bottom {
@@ -319,25 +318,25 @@ html {
     }
 
     .content__text-bottom {
-        display: none;
+    display: none;
     }
+
     .main__group-two{
     display: flex;
     margin-left: 10px;
-}
-    .content__block-container_expand {
-    background-image: url(/img/expand.png);
-    Width: 24px;
-    Height: 24px;
+    }
+
+    .read-next::before {
+    content: url(/img/expand.png);
+    position: relative;
     }
 
     .read-next{
     font-family: 'TT Lakes';
     font-size: 16px;
-    width: fit-content;
     border: none;
     background-color: #F8F8F8;
-    
+   
     }
 
     .main__group-three {
@@ -421,6 +420,7 @@ html {
 
    .menu{
     margin-left: 24px;
+    overflow: hidden;
    }
     .main{
     display: flex;
@@ -443,7 +443,12 @@ html {
     display: flex;
     margin-left: 24px;
     }
-
+    .read-next::before{
+   /*  */
+    }
+    .read-next{
+    /* margin-left: 22px; */
+    }
     .main__group-three {
     display: flex;
     }
@@ -520,9 +525,7 @@ html {
    letter-spacing: 0.20px;
    }
 
-   .read-next{
-   width: fit-content;
-   }
+  
 
    .content__block-container_expand {
     width: 20px;
