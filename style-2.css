@@ -84,7 +84,7 @@
     list-style: none;
 
   }
-  .menu__button__link {
+  .menu__button-link {
     font-family: "TT Lakes Regular";
     text-decoration: none;
     color: rgb(27, 28, 33);
@@ -103,7 +103,7 @@
   .profile__button {
     background-image: url("img/profile.png");
   }
-  .menu__button__link:hover {
+  .menu__button-link:hover {
     color: rgb(126, 126, 130);
     transition-duration: 0.7s;
   }
